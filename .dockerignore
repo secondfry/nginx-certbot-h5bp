@@ -1,0 +1,8 @@
+/h5bp-server-configs-nginx
+!/h5bp-server-configs-nginx/conf.d
+!/h5bp-server-configs-nginx/h5bp
+!/h5bp-server-configs-nginx/mime.types
+!/h5bp-server-configs-nginx/nginx.conf
+/h5bp-server-configs-nginx/conf.d/no-ssl.default.conf
+
+.git
