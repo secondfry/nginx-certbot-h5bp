@@ -7,7 +7,9 @@ server {
   include h5bp/tls/ssl_engine.conf;
   # NOTE(secondfry): instead of include h5bp/tls/certificate_files.conf;
   # we use Let's Encrypt!
-  ssl_certificate_key /etc/letsencrypt/live/example-com/privkey.pem;
+  ssl_certificate         /etc/letsencrypt/live/example-com/fullchain.pem;
+  ssl_certificate_key     /etc/letsencrypt/live/example-com/privkey.pem;
+  ssl_trusted_certificate /etc/letsencrypt/live/example-com/chain.pem;
   # NOTE(secondfry): inlined include h5bp/tls/policy_strict.conf;
   ssl_protocols TLSv1.2 TLSv1.3;
   ssl_ciphers EECDH+CHACHA20:EECDH+AES;
@@ -29,7 +31,9 @@ server {
   include h5bp/tls/ssl_engine.conf;
   # NOTE(secondfry): instead of include h5bp/tls/certificate_files.conf;
   # we use Let's Encrypt!
-  ssl_certificate_key /etc/letsencrypt/live/example-com/privkey.pem;
+  ssl_certificate         /etc/letsencrypt/live/example-com/fullchain.pem;
+  ssl_certificate_key     /etc/letsencrypt/live/example-com/privkey.pem;
+  ssl_trusted_certificate /etc/letsencrypt/live/example-com/chain.pem;
   # NOTE(secondfry): inlined include h5bp/tls/policy_strict.conf;
   ssl_protocols TLSv1.2 TLSv1.3;
   ssl_ciphers EECDH+CHACHA20:EECDH+AES;
